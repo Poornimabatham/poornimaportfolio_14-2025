@@ -16,16 +16,16 @@ import {
 } from "react-icons/si";
 
 const SkillsSection = ({ title, skills }) => (
-  <div className="mb-8">
-    <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+  <div className="mb-8 mt-9">
+    <h3 className="text-1xl font-semibold mb-4">{title}</h3>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center gap-2 p-4 bg-gray-100 rounded-xl shadow hover:shadow-md transition duration-300 ease-in-out"
+          className="flex flex-col items-center justify-center gap-2 p-4 bg-gray-100 rounded-xl shadow hover:shadow-md transition duration-300 ease-in-out w-20"
         >
-          <div className="text-4xl">{skill.icon}</div>
-          <div className="text-md font-medium text-center">{skill.name}</div>
+          <div className="text-2xl">{skill.icon}</div>
+          <div className="text-sm font-medium text-center">{skill.name}</div>
         </div>
       ))}
     </div>
@@ -54,8 +54,8 @@ const Skills = () => {
   ];
 
   return (
-    <div className="p-6">
-      <h1 className=" flex items-center justify-center bg-gray-100 p-6 rounded-xl shadow-mdtext-3xl font-bold">
+    <div className="p-6 max-w-3xl mx-auto">
+      <h1 className=" flex items-center justify-center bg-gray-100 p-6 rounded-xl shadow-md text-3xl font-bold">
         Skills
       </h1>
 

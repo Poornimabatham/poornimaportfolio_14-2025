@@ -10,7 +10,7 @@ const Experience = () => {
           <h2 className="text-3xl font-bold mb-4">Experience</h2>
 
           {/* Job 1 */}
-          <div className="mb-6">
+          <div className="mb-6 bg-black">
             <h3 className="text-xl font-semibold">Junior Backend Developer</h3>
             <p className="italic">(Ubitech Solutions Pvt. Ltd.)</p>
             <p className="text-sm text-gray-600 mb-2">
@@ -47,7 +47,7 @@ const Experience = () => {
         </div>
 
         {/* Right Side Box - Intern Experience */}
-        <div className="bg-white p-6 my-9 rounded-xl shadow-md">
+        <div className="bg-black p-6 my-9 rounded-xl shadow-md">
           <div>
             <h3 className="text-xl font-semibold">Software Developer Intern</h3>
             <p className="italic">(Ubitech Solutions Pvt. Ltd.)</p>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Education = () => {
+const Education = () => { 
   return (
     <div>
       {/* Title Section */}
@@ -9,21 +9,21 @@ const Education = () => {
       </div>
 
       {/* Education Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 px-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 px-9 ">
         {/* Education Block 1 */}
-        <div className="bg-white p-4 py-9 rounded-md shadow">
-          <h1 className="text-2xl font-semibold py-2">2016-2020</h1>
-          <h1 className="text-lg font-medium py-2">
+        <div className="bg-black text-white p-4 py-9 rounded-md shadow">
+          <h1 className="text-m  py-2">2016-2020</h1>
+          <h1 className="text-m   py-2">
             Bachelor of Engineering in Electrical
           </h1>
-          <p>Vikrant Institute of Technology and Management</p>
-          <p>Gwalior (M.P), India</p>
+          <p className=" text-m ">Vikrant Institute of Technology and Management</p>
+          <p className="text-m ">Gwalior (M.P), India</p>
         </div>
 
         {/* Education Block 2 */}
-        <div className="bg-white p-4 py-9 rounded-md shadow">
-          <h1 className="text-2xl font-semibold py-2">2019-2020</h1>
-          <h1 className="text-lg font-medium py-2">Higher Secondary School</h1>
+        <div className="bg-black p-4 py-9 rounded-md shadow text-white">
+          <h1 className="text-m  py-2">2019-2020</h1>
+          <h1 className="text-m  py-2">Higher Secondary School</h1>
           <p>New Adarsh Convent higher secondary school</p>
           <p>Gwalior (M.P), India</p>
         </div>

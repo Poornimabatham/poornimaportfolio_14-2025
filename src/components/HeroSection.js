@@ -1,19 +1,37 @@
 import React from "react";
 
 const HeroSection = () => {
+  const handleMouseEnter = (event) => {
+    const card = event.currentTarget;
+    console.log(event.currentTarget, card.classList);
+    card.classList.add("bg-white", "text-black");
+    card.classList.remove("bg-purple", "text-black"); // Assuming you might have intended text-black
+  };
+
+  const handleMouseLeave = (event) => {
+    const card = event.currentTarget;
+    console.log(card, "handleMouseLeave");
+    card.classList.add("bg-purple", "text-black"); // Revert to original colors (assuming text-black)
+    card.classList.remove("bg-red", "text-white");
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       {/* Left Box */}
-      <div className="bg-black p-6 mx-8 rounded-xl shadow-md">
-        <h2 className="text-2xl font-bold mb-2">Hello!</h2>
-        <h1 className="text-3xl font-bold text-white">I'm Poornima Batham</h1>
-        <p className="mt-2 text-gray-600">
-          <span>Junior Backend Developer</span>
+      <div
+        className="bg-purple p-6 mx-8 rounded-xl shadow-md text-black" // Added initial text color
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <h1 className="text-2xl font-bold mb-3">Hello!</h1>
+        <h1 className="text-1xl font-medium ">I'm Poornima Batham</h1>
+        <p className="mt-2">
+          <span className=" text-sm  ">Junior Backend Developer</span>
         </p>
-        <p className="mt-2 text-gray-600">
-          <span>Address:-Gwalior ,Madhya Pradesh</span>
+        <p className="mt-2">
+          <span className="text-sm ">Address:-Gwalior ,Madhya Pradesh</span>
         </p>
-        <p className="mt-2 text-gray-600">
+        <p className=" mt-2 text-sm">
           With over 2 years of experience in the field of development,
           accompanied by a bachelor's degree in engineering. Proficient in
           backend development, API testing, frontend technologies, and adaptable
