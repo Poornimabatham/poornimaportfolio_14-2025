@@ -1,39 +1,45 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false); // mobile menu toggle
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const menuItems = [
+    // { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Education", id: "education" },
+    { name: "Experience", id: "experience" },
+    { name: "Skills", id: "skills" },
+    { name: "Project", id: "projects" },
+  ];
 
   return (
-    <nav className="bg-black shadow-md">
+    <nav className="bg-white text-black sticky top-0 z-50 shadow-md hover:shadow-2xl transition-shadow duration-300 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="text-xl sm:text-2xl font-medium text-white my-2 mx-3">
-            <h2 className="text-white text-2xl">Poornima Batham</h2>
-          </span>
+        <a href="#home" className="text-2xl font-bold text-black">
+          Poornima Batham
         </a>
 
-        {/* Hamburger button */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="md:hidden  text-black text-2xl"
           onClick={() => setMenuOpen(!isMenuOpen)}
         >
           ☰
         </button>
 
-        {/* Nav items */}
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
           } w-full md:flex md:items-center md:w-auto`}
         >
-          <ul className="font-medium flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 space-y-2 md:space-y-0">
-            {["Home", "About", "Resume", "Projects", "Contact"].map((item) => (
-              <li key={item}>
+          <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0  text-black">
+            {menuItems.map((item) => (
+              <li key={item.id}>
                 <a
-                  href="#"
-                  className="text-white md:p-0 hover:text-blue-400 transition-colors duration-200"
+                  href={`#${item.id}`}
+                  className="block py-2 hover:text-blue-400"
+                  onClick={() => setMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
                 </a>
               </li>
             ))}

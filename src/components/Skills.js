@@ -15,14 +15,17 @@ import {
   SiMysql,
 } from "react-icons/si";
 
+import { SiPostman } from "react-icons/si";
+
+// Reusable SkillsSection component
 const SkillsSection = ({ title, skills }) => (
-  <div className="mb-8 mt-9">
-    <h3 className="text-1xl font-semibold mb-4">{title}</h3>
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+  <div  id="skills" className="bg-gray-50 p-4 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
+    <h3 className="text-xl font-semibold mb-4 text-center">{title}</h3>
+    <div className="grid grid-cols-3 gap-4">
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center gap-2 p-4 bg-gray-100 rounded-xl shadow hover:shadow-md transition duration-300 ease-in-out w-20"
+          className="flex flex-col items-center justify-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out"
         >
           <div className="text-2xl">{skill.icon}</div>
           <div className="text-sm font-medium text-center">{skill.name}</div>
@@ -32,6 +35,7 @@ const SkillsSection = ({ title, skills }) => (
   </div>
 );
 
+// Main Skills component
 const Skills = () => {
   const frontendSkills = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -43,25 +47,44 @@ const Skills = () => {
   ];
 
   const backendSkills = [
-    { name: "Node JS", icon: <FaNodeJs className="text-green-600" /> },
-    { name: "Express", icon: <SiExpress className="text-gray-800" /> },
-    { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+    {
+      name: "Node JS",
+      icon: (
+        <FaNodeJs className="text-green-600 shadow-md hover:shadow-2xl transition-shadow duration-300" />
+      ),
+    },
+    {
+      name: "Express",
+      icon: (
+        <SiExpress className="text-gray-800 shadow-md hover:shadow-2xl transition-shadow duration-300" />
+      ),
+    },
+    {
+      name: "MongoDB",
+      icon: (
+        <SiMongodb className="text-green-500 shadow-md hover:shadow-2xl transition-shadow duration-300" />
+      ),
+    },
     { name: "SQL", icon: <SiMysql className="text-blue-700" /> },
   ];
 
   const toolSkills = [
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+    { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
   ];
 
   return (
-    <div className="p-6 max-w-3xl mx-auto">
-      <h1 className=" flex items-center justify-center bg-gray-100 p-6 rounded-xl shadow-md text-3xl font-bold">
+    <div className="p-6 max-w-6xl mx-auto">
+      <h1 className="flex items-center justify-center bg-gray-100 p-3 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 text-2xl  mb-8">
         Skills
       </h1>
 
-      <SkillsSection title="Frontend" skills={frontendSkills} />
-      <SkillsSection title="Backend" skills={backendSkills} />
-      <SkillsSection title="Tools" skills={toolSkills} />
+      {/* Responsive Grid for Sections */}
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 ">
+        <SkillsSection title="Frontend" skills={frontendSkills} />
+        <SkillsSection title="Backend" skills={backendSkills} />
+        <SkillsSection title="Tools" skills={toolSkills} />
+      </div>
     </div>
   );
 };

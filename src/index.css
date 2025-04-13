@@ -210,3 +210,23 @@ button[type="submit"]:hover {
   width: 100%;
   margin: 12px 33px;
 }
+
+
+#div2 {
+  background-color: aquamarine;
+  box-shadow: 15px 15px 10px blueviolet inset, -15px -15px 10px blueviolet inset;
+  width: 500px;
+  height: 200px;
+  padding: 25px;
+  padding-left: 50px;
+  transition: box-shadow 2s ease;
+}
+
+#div2:hover {
+  background-color: aquamarine;
+  box-shadow: 5px 5px 1px darkblue, 10px 10px 3px blue, 15px 15px 5px lightblue, 15px 15px 10px blueviolet inset, -15px -15px 10px blueviolet inset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
