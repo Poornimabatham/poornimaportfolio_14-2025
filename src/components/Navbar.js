@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white text-black sticky top-0 z-50 shadow-md hover:shadow-2xl transition-shadow duration-300 ">
+    <nav className="bg-black text-white sticky top-0 z-50 shadow-md hover:shadow-2xl transition-shadow duration-300 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#home" className="text-2xl font-bold text-black">
           Poornima Batham
