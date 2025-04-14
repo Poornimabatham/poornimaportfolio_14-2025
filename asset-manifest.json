@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/poornimaportfolio_14-2025/static/css/main.1584529a.css",
+    "main.js": "/poornimaportfolio_14-2025/static/js/main.941d0ede.js",
+    "static/js/453.83234151.chunk.js": "/poornimaportfolio_14-2025/static/js/453.83234151.chunk.js",
+    "index.html": "/poornimaportfolio_14-2025/index.html",
+    "main.1584529a.css.map": "/poornimaportfolio_14-2025/static/css/main.1584529a.css.map",
+    "main.941d0ede.js.map": "/poornimaportfolio_14-2025/static/js/main.941d0ede.js.map",
+    "453.83234151.chunk.js.map": "/poornimaportfolio_14-2025/static/js/453.83234151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1584529a.css",
+    "static/js/main.941d0ede.js"
+  ]
+}
