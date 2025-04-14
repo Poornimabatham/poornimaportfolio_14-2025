@@ -25,7 +25,7 @@ const Education = () => {
 
           {/* Education Block 2 */}
           <div className="bg-green-100 p-4 py-9 rounded-md shadow-md text-black hover:shadow-2xl transition-shadow duration-300">
-            <h1 className="text-base py-2">2019-2020</h1>
+            <h1 className="text-base py-2">2015-2016</h1>
             <h1 className="text-base py-2">Higher Secondary School</h1>
             <p className="text-base">
               New Adarsh Convent Higher Secondary School

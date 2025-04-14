@@ -10,6 +10,7 @@ const Navbar = () => {
     { name: "Experience", id: "experience" },
     { name: "Skills", id: "skills" },
     { name: "Project", id: "projects" },
+    
   ];
 
   return (
