@@ -9,7 +9,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* Project 1: Attendance App */}
         <div className="bg-white p-4 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
           <img
@@ -31,6 +31,7 @@ const Projects = () => {
             Human Resource Management Website
           </p>
         </div>
+       
       </div>
     </div>
   );
