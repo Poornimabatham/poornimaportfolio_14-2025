@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/poornimaportfolio_14-2025/static/css/main.d484bfd7.css",
-    "main.js": "/poornimaportfolio_14-2025/static/js/main.254dcf9f.js",
+    "main.css": "/poornimaportfolio_14-2025/static/css/main.52cf6e9d.css",
+    "main.js": "/poornimaportfolio_14-2025/static/js/main.e69cbeb1.js",
     "static/js/453.83234151.chunk.js": "/poornimaportfolio_14-2025/static/js/453.83234151.chunk.js",
     "index.html": "/poornimaportfolio_14-2025/index.html",
-    "main.d484bfd7.css.map": "/poornimaportfolio_14-2025/static/css/main.d484bfd7.css.map",
-    "main.254dcf9f.js.map": "/poornimaportfolio_14-2025/static/js/main.254dcf9f.js.map",
+    "main.52cf6e9d.css.map": "/poornimaportfolio_14-2025/static/css/main.52cf6e9d.css.map",
+    "main.e69cbeb1.js.map": "/poornimaportfolio_14-2025/static/js/main.e69cbeb1.js.map",
     "453.83234151.chunk.js.map": "/poornimaportfolio_14-2025/static/js/453.83234151.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d484bfd7.css",
-    "static/js/main.254dcf9f.js"
+    "static/css/main.52cf6e9d.css",
+    "static/js/main.e69cbeb1.js"
   ]
 }
