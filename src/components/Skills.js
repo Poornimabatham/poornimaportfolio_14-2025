@@ -5,6 +5,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -13,6 +14,9 @@ import {
   SiTypescript,
   SiMongodb,
   SiMysql,
+  SiPostgresql,
+  SiBitbucket,
+  SiKubernetes,
 } from "react-icons/si";
 
 import { SiPostman } from "react-icons/si";
@@ -23,13 +27,23 @@ const SkillsSection = ({ title, skills }) => (
     <h3 className="text-xl font-semibold mb-4 text-center">{title}</h3>
     <div className="grid grid-cols-3 gap-4">
       {skills.map((skill, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center justify-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out"
-        >
-          <div className="text-2xl">{skill.icon}</div>
-          <div className="text-sm font-medium text-center">{skill.name}</div>
-        </div>
+       <div key={index} className="flip-card h-24">
+  <div className="flip-card-inner h-full">
+
+    {/* Front */}
+    <div className="flip-card-front flex flex-col items-center justify-center gap-2 p-3 bg-white rounded-lg shadow-sm">
+      <div className="text-2xl">{skill.icon}</div>
+      <div className="text-sm font-medium text-center">{skill.name}</div>
+    </div>
+
+    {/* Back */}
+    <div className="flip-card-back flex items-center justify-center p-3 bg-blue-500 text-white rounded-lg shadow-sm">
+      <div className="text-sm font-medium text-center  whitespace-nowrap">{skill.name}</div>
+    </div>
+
+  </div>
+</div>
+
       ))}
     </div>
   </div>
@@ -44,6 +58,7 @@ const Skills = () => {
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
     { name: "React JS", icon: <FaReact className="text-cyan-400" /> },
+    
   ];
 
   const backendSkills = [
@@ -66,12 +81,17 @@ const Skills = () => {
       ),
     },
     { name: "SQL", icon: <SiMysql className="text-blue-700" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" /> },
   ];
 
-  const toolSkills = [
-    { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
-    { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
-  ];
+ const toolSkills = [
+  { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+  { name: "GitHub", icon: <FaGithub className="text-gray-900" /> },
+  { name: "Bitbucket", icon: <SiBitbucket className="text-blue-600" /> },
+  { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+  { name: "Kubernetes", icon: <SiKubernetes className="text-blue-500" /> },
+  { name: "Thunder Client", icon: <span className="text-purple-500 font-bold text-xs">TC</span> },
+];
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
