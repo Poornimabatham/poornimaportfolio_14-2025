@@ -56,7 +56,6 @@ const Experience = () => {
             </div>
           </div>
           <div className="bg-green-100 text-black p-6 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
-            {/* Job 1 */}
             <div className="mb-6">
               <h3 className="text-xl font-semibold">Software Developer</h3>
               <p className="italic">(Ubitech Solutions Pvt. Ltd.)</p>
