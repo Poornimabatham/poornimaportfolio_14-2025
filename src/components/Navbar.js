@@ -37,7 +37,7 @@ const Navbar = () => {
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className="block py-2 hover:text-blue-400"
+                  className="block py-2 hover:text-blue-400 border-b-2 border-transparent hover:border-blue-400 transition-all duration-300"
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.name}
